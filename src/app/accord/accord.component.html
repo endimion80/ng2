@@ -1,3 +1,6 @@
   <h6>Los Usuarios son:</h6>
-  {{usuarios}}
-
+  <ul>
+  <li *ngFor='let key of Usuarios'>
+    value: {{key.value}}
+  </li>
+</ul>
