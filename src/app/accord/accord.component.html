@@ -1,6 +1,28 @@
   <h6>Los Usuarios son:</h6>
-  <ul>
-  <li *ngFor='let key of Usuarios'>
-    value: {{key.value}}
-  </li>
-</ul>
+  {{usuarios|json}}
+  <hr>
+  <UL *ngFor="let usuarrio of usuarios">
+    <li>
+        <ul>
+          <li>
+        {{usuarrio.id}} 
+          </li>
+          <li>
+        {{usuarrio.username}}
+          </li>
+          <li>
+        {{usuarrio.password}}
+          </li>
+             <li>
+        {{usuarrio.roles}}
+          </li>
+             <li>
+        {{usuarrio.enabled}}
+          </li>
+             <li>
+        {{usuarrio.fullname}}
+          </li>
+        </ul> 
+  </li>          
+</UL>
+<div [innerHTML]="usuarios| json"></div>

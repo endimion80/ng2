@@ -10,6 +10,6 @@ public url = 'http://localhost/inteligcomercial/web/app_dev.php';
 constructor(private _http: Http){}
 
 readerjson(){
-    return this._http.get(this.url) .map(res => res.json());
+    return this._http.get(this.url) .map((res:Response) => res.json());
     }
 }
