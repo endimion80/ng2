@@ -3,13 +3,13 @@ import { Component, OnInit } from '@angular/core';
 import { UsersService } from '../services/users.service';
 
 @Component({
-  selector: 'app-accord',
-  templateUrl: './accord.component.html',
-  styleUrls: ['./accord.component.css'],
+  selector: 'app-consultant',
+  templateUrl: './consultant.component.html',
+  styleUrls: ['./consultant.component.css'],
   providers: [UsersService]
 })
-export class AccordComponent implements OnInit {
-public usuarios;
+export class ConsultantComponent implements OnInit {
+public consultors;
 
   constructor(
     private _usersService: UsersService)
@@ -18,8 +18,8 @@ public usuarios;
     this._usersService.readerjson()
      .subscribe(
                                         result => {
-                                                this.usuarios = result;
-                                                console.log(this.usuarios);
+                                                this.consultors = result;
+                                                console.log(this.consultors);
                                         },
                                     );
    }
