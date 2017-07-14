@@ -10,10 +10,10 @@ import { UsersService } from '../services/users.service';
 })
 export class ConsultantComponent implements OnInit {
 public consultors;
-
+public title;
   constructor(
     private _usersService: UsersService)
-    { }
+    { this.title = "Componente de Consultores falta añadir la api en symphony";}
  ngOnInit(){
     this._usersService.readerjson()
      .subscribe(
