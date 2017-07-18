@@ -8,11 +8,15 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 
-import { appRoutes , appRouteProviders} from './app.routing' ;
+import { appRoutes , appRouteProviders} from './app.routing';
+
+import { LoaderComponent } from './shared/loader/loader.component';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent , HeaderComponent,AccordComponent,ConsultantComponent,
+    AppComponent , HeaderComponent,AccordComponent,ConsultantComponent, LoaderComponent
   ],
   imports: [
     BrowserModule,

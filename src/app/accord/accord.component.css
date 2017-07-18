@@ -1,0 +1,7 @@
+table{
+ -webkit-animation: fadein 3.5s alternate forwards;
+}
+@-webkit-keyframes fadein{
+    0%,50% { opacity: 0; }
+    to { opacity: 1; }
+}
